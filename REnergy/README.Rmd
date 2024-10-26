@@ -53,7 +53,7 @@ Alternatively, you can access and manipulate the cleaned dataset directly if you
 data <- REnergy::get_cleaned_data()
 
 # View the first few rows of the dataset
-head(data)
+devhead(data)
 
 ```
 
