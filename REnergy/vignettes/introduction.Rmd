@@ -1,0 +1,80 @@
+---
+title: "introduction"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{introduction}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(REnergy)
+```
+
+# Introduction
+
+The `REnergy` package provides tools to explore renewable energy trends in Australia from 2010 to 2023. This package includes a Shiny app for interactive data visualization and functions for analyzing investment and energy production data. It is designed to help analysts, researchers, and policymakers gain insights into renewable energy investment patterns and production in Australia.
+
+In this vignette, we'll walk you through the main features of the package and show you how to get started.
+
+# Installation
+
+To install the development version of `REnergy` from GitHub, use:
+
+```{r}
+install.packages("remotes") # Uncomment if 'remotes' is not installed
+remotes::install_github("akshatamhaski/assignment-4-packages-and-shiny-apps-akshatamhaski")
+```
+
+
+Using the Shiny App
+The main feature of the REnergy package is a Shiny app that allows you to explore renewable energy data interactively. To launch the Shiny app, load the package and call the launch_shiny_app() function:
+```{r}
+library(REnergy)
+launch_shiny_app()
+```
+
+This will open the Shiny app in your default web browser. The app includes the following features:
+
+Investment Trends: Select an energy type to view the total investments over time (2010-2023).
+Energy Production by Type: Select a year to view a breakdown of renewable energy production by type.
+
+Accessing the Cleaned Data
+If you prefer working with data directly, you can access the cleaned data included in this package. The dataset contains information on investment in USD and energy production in GWh, filtered for Australia from 2010 to 2023.
+
+To load the cleaned data:
+
+```{r}
+data("cleaned_data", package = "REnergy")
+head(cleaned_data)
+```
+
+
+Example Analysis
+Let’s say you want to analyze total investments in different renewable energy types over time. Here’s a simple example using the dplyr package:
+
+```{r}
+library(dplyr)
+
+# Summarize total investments by energy type
+investment_summary <- cleaned_data %>%
+  group_by(energy_type) %>%
+  summarize(total_investment = sum(investments_usd, na.rm = TRUE))
+
+print(investment_summary)
+
+```
+
+This example groups the data by energy_type and calculates the total investment for each type, helping you understand which types of renewable energy received the most funding.
+
+Conclusion
+The REnergy package provides an interactive way to explore renewable energy trends in Australia, using both the Shiny app and direct data access. This vignette has shown you how to install the package, launch the Shiny app, and use the cleaned dataset for custom analyses.
+
+For further details on specific functions and data, refer to the reference manual or check out the function documentation within R.
