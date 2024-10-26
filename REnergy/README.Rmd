@@ -25,8 +25,8 @@ The REnergy package provides tools for exploring renewable energy trends in Aust
 You can install the development version of REnergy like so:
 
 ```{r}
-# install.packages("remotes") # Uncomment if 'remotes' is not already installed
-#remotes::install_github("akshatamhaski/assignment-4-packages-and-shiny-apps-akshatamhaski")
+#install.packages("remotes") # Uncomment if 'remotes' is not already installed
+remotes::install_github("https://github.com/ETC5523-2024/assignment-4-packages-and-shiny-apps-akshatamhaski/tree/main/REnergy")
 
 ```
 
@@ -37,8 +37,8 @@ Example
 Here’s a basic example of how to use the REnergy package. First, you can load the package and launch the Shiny app to explore renewable energy data interactively:
 
 ```{r example}
-#library(REnergy)
-#launch_shiny_app()
+library(REnergy)
+launch_shiny_app()
 
 ```
 
@@ -50,10 +50,10 @@ Alternatively, you can access and manipulate the cleaned dataset directly if you
 
 ```{r}
 # Access the cleaned dataset for analysis
-#data <- REnergy::get_cleaned_data()
+data <- REnergy::get_cleaned_data()
 
 # View the first few rows of the dataset
-#head(data)
+head(data)
 
 ```
 

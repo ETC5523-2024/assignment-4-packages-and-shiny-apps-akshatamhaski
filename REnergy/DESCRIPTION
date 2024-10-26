@@ -2,7 +2,8 @@ Package: REnergy
 Title: What the Package Does (One Line, Title Case)
 Version: 0.0.0.9000
 Authors@R: 
-    person("Akshata", "Mhaski", , "akshatamhaski2000@gmail.com", role = "aut")
+    person("Akshata", "Mhaski", , "akshatamhaski@example.com", role = c("aut", "cre"),
+           comment = c(ORCID = "YOUR-ORCID-ID"))
 Description: The REnergy package provides tools for analyzing renewable energy trends in Australia
     from 2010 to 2023. This package includes a Shiny app for interactive data visualization,
     allowing users to explore investment patterns and energy production by type and year. It is
