@@ -1,0 +1,9 @@
+pandoc: 3.1.1
+pkgdown: 2.1.1
+pkgdown_sha: ~
+articles:
+  introduction: introduction.html
+last_built: 2024-10-27T06:59Z
+urls:
+  reference: https://your-username.github.io/assignment-4-packages-and-shiny-apps-akshatamhaski/reference
+  article: https://your-username.github.io/assignment-4-packages-and-shiny-apps-akshatamhaski/articles
