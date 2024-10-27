@@ -18,8 +18,8 @@ renewable energy investment patterns and production in Australia.
 You can install the development version of REnergy like so:
 
 ``` r
-# install.packages("remotes") # Uncomment if 'remotes' is not already installed
-#remotes::install_github("akshatamhaski/assignment-4-packages-and-shiny-apps-akshatamhaski")
+#install.packages("remotes") # Uncomment if 'remotes' is not already installed
+remotes::install_github("https://github.com/ETC5523-2024/assignment-4-packages-and-shiny-apps-akshatamhaski/tree/main/REnergy")
 ```
 
 ## Example
@@ -29,8 +29,8 @@ you can load the package and launch the Shiny app to explore renewable
 energy data interactively:
 
 ``` r
-#library(REnergy)
-#launch_shiny_app()
+library(REnergy)
+launch_shiny_app()
 ```
 
 This command will open a Shiny app in your default web browser. Within
@@ -44,10 +44,10 @@ working with raw data:
 
 ``` r
 # Access the cleaned dataset for analysis
-#data <- REnergy::get_cleaned_data()
+data <- REnergy::get_cleaned_data()
 
 # View the first few rows of the dataset
-#head(data)
+head(data)
 ```
 
 ## Main Components
@@ -66,6 +66,3 @@ get_cleaned_data(): Loads and returns a cleaned version of the renewable
 energy dataset. Vignette: A comprehensive guide is available in the
 vignette section, explaining how to use the Shiny app and work with the
 data.
-
-## Documentation
-For full documentation, visit the [REnergy pkgdown site](https://etc5523-2024.github.io/assignment-4-packages-and-shiny-apps-akshatamhaski/).
