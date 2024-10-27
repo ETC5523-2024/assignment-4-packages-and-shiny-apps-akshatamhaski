@@ -1,0 +1,13 @@
+url: https://etc5523-2024.github.io/assignment-4-packages-and-shiny-apps-akshatamhaski/
+template:
+  bootstrap: 5
+
+navbar:
+  left:
+    - text: "Articles"
+      href: articles/index.html  # Directs to the Articles section on the site
+
+articles:
+  - title: "Getting Started"
+    contents:
+      - introduction

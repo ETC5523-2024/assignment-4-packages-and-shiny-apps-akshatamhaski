@@ -66,3 +66,6 @@ get_cleaned_data(): Loads and returns a cleaned version of the renewable
 energy dataset. Vignette: A comprehensive guide is available in the
 vignette section, explaining how to use the Shiny app and work with the
 data.
+
+## Documentation
+For full documentation, visit the [REnergy pkgdown site](https://etc5523-2024.github.io/assignment-4-packages-and-shiny-apps-akshatamhaski/).
