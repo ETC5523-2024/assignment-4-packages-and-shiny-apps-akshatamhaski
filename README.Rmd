@@ -26,7 +26,7 @@ You can install the development version of REnergy like so:
 
 ```{r eval=FALSE}
 #install.packages("remotes") # Uncomment if 'remotes' is not already installed
-remotes::install_github("https://github.com/ETC5523-2024/assignment-4-packages-and-shiny-apps-akshatamhaski/tree/main/REnergy")
+remotes::install_github("ETC5523-2024/assignment-4-packages-and-shiny-apps-akshatamhaski")
 
 ```
 
