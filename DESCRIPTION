@@ -1,5 +1,5 @@
 Package: REnergy
-Title: What the Package Does (One Line, Title Case)
+Title: Analyze and Visualize Renewable Energy Trends in Australia
 Version: 0.0.0.9000
 Authors@R: 
     person("Akshata", "Mhaski", , "akshatamhaski@example.com", role = c("aut", "cre"),
