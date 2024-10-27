@@ -72,6 +72,6 @@ Vignette: A comprehensive guide is available in the vignette section, explaining
 
 ## Documentation
 
-For detailed documentation, see the [REnergy pkgdown site](https://etc5523-2024.github.io/assignment-4-packages-and-shiny-apps-akshatamhaski).
+For detailed documentation, see the [REnergy pkgdown site](https://etc5523-2024.github.io/assignment-4-packages-and-shiny-apps-akshatamhaski/).
 
 
