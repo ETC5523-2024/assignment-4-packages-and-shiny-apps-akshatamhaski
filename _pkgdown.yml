@@ -1,7 +1,13 @@
+# _pkgdown.yml
+
+# Site title and URL
+title: "REnergy"
 url: https://etc5523-2024.github.io/assignment-4-packages-and-shiny-apps-akshatamhaski/
+
 template:
   bootstrap: 5
 
+# Navbar configuration
 navbar:
   left:
     - text: "Articles"
@@ -10,4 +16,8 @@ navbar:
 articles:
   - title: "Getting Started"
     contents:
-      - introduction
+      - introduction  # Reference to the vignette file introduction.Rmd
+
+
+
+
