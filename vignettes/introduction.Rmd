@@ -59,7 +59,7 @@ head(cleaned_data)
 Example Analysis
 Let’s say you want to analyze total investments in different renewable energy types over time. Here’s a simple example using the dplyr package:
 
-```{r}
+```{r eval=FALSE}
 library(dplyr)
 
 # Summarize total investments by energy type
