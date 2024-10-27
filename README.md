@@ -58,12 +58,15 @@ Shiny App: The main feature of the package, providing an interactive
 interface to explore renewable energy trends in Australia.
 
 Investment Trends Plot: A line plot that displays total investments by
-energy type over time. Energy Production Plot: A bar plot that shows the
-production breakdown by energy type for a selected year. Data Functions:
-Utility functions for accessing and manipulating renewable energy data.
+energy type over time.
+
+Energy Production Plot: A bar plot that shows the production breakdown
+by energy type for a selected year.
 
 get_cleaned_data(): Loads and returns a cleaned version of the renewable
-energy dataset. Vignette: A comprehensive guide is available in the
+energy dataset.
+
+introduction vignette: A comprehensive guide is available in the
 vignette section, explaining how to use the Shiny app and work with the
 data.
 
