@@ -1,5 +1,5 @@
 ---
-title: "introduction"
+title: "Introduction"
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{introduction}
@@ -18,7 +18,6 @@ knitr::opts_chunk$set(
 library(REnergy)
 ```
 
-# Introduction
 
 The `REnergy` package provides tools to explore renewable energy trends in Australia from 2010 to 2023. This package includes a Shiny app for interactive data visualization and functions for analyzing investment and energy production data. It is designed to help analysts, researchers, and policymakers gain insights into renewable energy investment patterns and production in Australia.
 
@@ -28,15 +27,15 @@ In this vignette, we'll walk you through the main features of the package and sh
 
 To install the development version of `REnergy` from GitHub, use:
 
-```{r}
-install.packages("remotes") # Uncomment if 'remotes' is not installed
-remotes::install_github("akshatamhaski/assignment-4-packages-and-shiny-apps-akshatamhaski")
+```{r eval=FALSE}
+#install.packages("remotes") # Uncomment if 'remotes' is not installed
+remotes::install_github("ETC5523-2024/assignment-4-packages-and-shiny-apps-akshatamhaski")
 ```
 
 
 Using the Shiny App
 The main feature of the REnergy package is a Shiny app that allows you to explore renewable energy data interactively. To launch the Shiny app, load the package and call the launch_shiny_app() function:
-```{r}
+```{r eval=FALSE}
 library(REnergy)
 launch_shiny_app()
 ```
@@ -67,7 +66,6 @@ library(dplyr)
 investment_summary <- cleaned_data %>%
   group_by(energy_type) %>%
   summarize(total_investment = sum(investments_usd, na.rm = TRUE))
-
 print(investment_summary)
 
 ```

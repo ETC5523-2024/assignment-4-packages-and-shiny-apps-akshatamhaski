@@ -9,7 +9,7 @@ data("cleaned_data", package = "REnergy")
 
 # Define UI for the Shiny app with a theme
 ui <- fluidPage(
-  theme = shinytheme("flatly"),  # Set a predefined theme like "flatly" or others
+  theme = shinytheme("flatly"),  # Set a predefined theme "flatly"
   titlePanel("Australia's Renewable Energy Trends (2010-2023)"),
 
   sidebarLayout(
