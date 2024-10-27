@@ -33,7 +33,7 @@ jobs:
 
       - name: Deploy to GitHub Pages 🚀
         if: github.event_name != 'pull_request'
-        uses: peaceiris/actions-gh-pages@v4.5.0
+        uses: JamesIves/github-pages-deploy-action@v4.5.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./docs
